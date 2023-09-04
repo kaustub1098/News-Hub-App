@@ -1,0 +1,13 @@
+<div>
+  <form (ngSubmit)="searchNews()">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      name="searchQuery"
+      placeholder="Search for news"
+    />
+    <button type="submit" routerLink="search-results">Search</button>
+  </form>
+</div>
+
+
