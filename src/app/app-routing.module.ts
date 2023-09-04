@@ -7,11 +7,12 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
-  {path:'',component:TopheadingComponent},
+  {path:'search-results/:query',component:SearchResultsComponent},
+  {path:'home',component:TopheadingComponent},
   {path:'techNews',component:TechnewsComponent},
   {path:'businessNews',component:BusinessNewsComponent},
   {path:'search',component:SearchBarComponent},
-  {path:'search-results',component:SearchResultsComponent},
+  
 ];
 
 @NgModule({

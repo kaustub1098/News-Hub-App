@@ -1,13 +1,19 @@
 <div>
-  <form (ngSubmit)="searchNews()">
-    <input
-      type="text"
-      [(ngModel)]="searchQuery"
-      name="searchQuery"
-      placeholder="Search for news"
-    />
-    <button type="submit" routerLink="search-results">Search</button>
+  <form class="form-inline" (ngSubmit)="searchNews()">
+    <div class="input-group">
+      <input
+        type="text"
+        [(ngModel)]="searchQuery"
+        name="searchQuery"
+        class="form-control"
+        placeholder="Search for news"
+      />
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </div>
   </form>
 </div>
+
 
 
